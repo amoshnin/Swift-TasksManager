@@ -45,7 +45,7 @@ struct TaskListView: View {
       )
       .navigationBarTitle("Tasks")
       .sheet(isPresented: $showSettingsScreen) {
-        SettingsView()
+        SettingsView(isModalVisible: $showSettingsScreen)
       }
     }
   }

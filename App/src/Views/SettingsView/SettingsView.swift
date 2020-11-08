@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Binding var isModalVisible: Bool
     @ObservedObject var settingsViewModel = SettingsViewModel()
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -54,7 +55,7 @@ struct SettingsView: View {
                         }
                     }
                     
-                    AccountSection(settingsViewModel: self.settingsViewModel)
+                    AccountSection(isModalVisible: $isModalVisible, settingsViewModel: self.settingsViewModel)
                 }
                 .navigationBarTitle("Settings", displayMode: .inline)
                 .navigationBarItems(trailing:
@@ -68,16 +69,18 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(isModalVisible: .constant(false))
     }
 }
 
 struct AccountSection: View {
+    @Binding var isModalVisible: Bool
+
     @ObservedObject var settingsViewModel: SettingsViewModel
     @ObservedObject var authenticationService = AuthenticationService()
     
     @State private var showAuthView = false
-    
+ 
     var body: some View {
         Section(footer: footer) {
             button
@@ -108,29 +111,26 @@ struct AccountSection: View {
     var button: some View {
         VStack {
             if authenticationService.isAuth {
-          
-                Button(action: { self.logout() }) {
+                Button(action: {  self.logout() }) {
                     HStack {
                         Spacer()
                         Text("Logout")
                         Spacer()
                     }
-                }
+                }}
             
-            }
-                
-                else {
-                    Button(action: { self.login() }) {
-                        HStack {
-                            Spacer()
-                            Text("Login")
-                            Spacer()
-                        }
+            else {
+                Button(action: { self.login() }) {
+                    HStack {
+                        Spacer()
+                        Text("Login")
+                        Spacer()
                     }
                 }
-                
             }
-     
+            
+        }
+        
         .sheet(isPresented: self.$showAuthView) {
             AuthView()
         }
@@ -142,6 +142,7 @@ struct AccountSection: View {
     
     func logout() {
         self.settingsViewModel.logout()
-    }
+        self.isModalVisible = false
+     }
     
 }
