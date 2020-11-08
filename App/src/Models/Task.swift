@@ -1,11 +1,3 @@
-//
-//  Task.swift
-//  MakeItSo
-//
-//  Created by Peter Friese on 10/01/2020.
-//  Copyright © 2020 Google LLC. All rights reserved.
-//
-
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
@@ -21,15 +13,7 @@ struct Task: Codable, Identifiable {
   var title: String
   var priority: TaskPriority
   var completed: Bool
-  @ServerTimestamp var createdTime: Timestamp?
+  @ServerTimestamp var createdAt: Timestamp?
   var userId: String?
 }
-
-#if DEBUG
-let testDataTasks = [
-  Task(title: "Implement UI", priority: .medium, completed: true),
-  Task(title: "Connect to Firebase", priority: .medium, completed: false),
-  Task(title: "????", priority: .high, completed: false),
-  Task(title: "PROFIT!!!", priority: .high, completed: false)
-]
-#endif
+ 

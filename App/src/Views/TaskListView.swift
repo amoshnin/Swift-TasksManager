@@ -1,10 +1,4 @@
-//
-//  ContentView.swift
-//  MakeItSo
-//
-//  Created by Peter Friese on 10/01/2020.
-//  Copyright © 2020 Google LLC. All rights reserved.
-//
+ 
 
 import SwiftUI
 
