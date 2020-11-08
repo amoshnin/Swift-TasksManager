@@ -16,5 +16,7 @@ target 'TasksManager' do
   
   pod 'Firebase/Functions'
   pod 'Firebase/Messaging'
+  pod 'GoogleSignIn'
+
 
 end

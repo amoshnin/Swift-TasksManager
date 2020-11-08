@@ -125,10 +125,9 @@
 		88169CDA23C8A0EA009CFC9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				88169CC923C8A081009CFC9C /* TaskListView.swift */,
-				88EC1C1E23FD86B20045F6A8 /* SettingsView.swift */,
-				88DF00BA23FC45D00007B71E /* SignInView.swift */,
-				88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */,
+				AC46B870255858F900FEF6D3 /* TasksListView */,
+				AC46B86D255858EF00FEF6D3 /* SettingsView */,
+				AC46B86A255858E100FEF6D3 /* AuthView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +183,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC46B86A255858E100FEF6D3 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				AC46B8712558591800FEF6D3 /* Components */,
+				88DF00BA23FC45D00007B71E /* SignInView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		AC46B86D255858EF00FEF6D3 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				88EC1C1E23FD86B20045F6A8 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		AC46B870255858F900FEF6D3 /* TasksListView */ = {
+			isa = PBXGroup;
+			children = (
+				88169CC923C8A081009CFC9C /* TaskListView.swift */,
+			);
+			path = TasksListView;
+			sourceTree = "<group>";
+		};
+		AC46B8712558591800FEF6D3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		ACF08EAC255839E10003C47D /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +254,7 @@
 				88169CBF23C8A081009CFC9C /* Frameworks */,
 				88169CC023C8A081009CFC9C /* Resources */,
 				CF9E99170C808E6B2B8B9853 /* [CP] Embed Pods Frameworks */,
+				CEFC59E7A42918509A0CD59F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +333,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEFC59E7A42918509A0CD59F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TasksManager/Pods-TasksManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TasksManager/Pods-TasksManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TasksManager/Pods-TasksManager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF9E99170C808E6B2B8B9853 /* [CP] Embed Pods Frameworks */ = {
