@@ -91,13 +91,7 @@
 		88169CC423C8A081009CFC9C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				88169CD923C8A0D6009CFC9C /* App */,
-				88DF00C123FC46E70007B71E /* Utilities */,
-				8825907F23D9A4FE00AB7022 /* Services */,
-				88D22F8023CDDC4B003C6D03 /* Repositories */,
-				88169CDB23C8A1B7009CFC9C /* Models */,
-				88D22F5B23CCC5BD003C6D03 /* ViewModels */,
-				88169CDA23C8A0EA009CFC9C /* Views */,
+				ACF08EAC255839E10003C47D /* src */,
 				88169CCB23C8A083009CFC9C /* Assets.xcassets */,
 				88169CD023C8A083009CFC9C /* LaunchScreen.storyboard */,
 				88169CD323C8A083009CFC9C /* Info.plist */,
@@ -186,6 +180,20 @@
 				7389934F4E83C47499E91BB4 /* Pods_MakeItSo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACF08EAC255839E10003C47D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				88169CD923C8A0D6009CFC9C /* App */,
+				88DF00C123FC46E70007B71E /* Utilities */,
+				8825907F23D9A4FE00AB7022 /* Services */,
+				88D22F8023CDDC4B003C6D03 /* Repositories */,
+				88169CDB23C8A1B7009CFC9C /* Models */,
+				88D22F5B23CCC5BD003C6D03 /* ViewModels */,
+				88169CDA23C8A0EA009CFC9C /* Views */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		E4370257533039127F1E8557 /* Pods */ = {
