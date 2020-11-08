@@ -4,7 +4,6 @@ import Resolver
 import FirebaseFunctions
 import GoogleSignIn
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     @LazyInjected var authenticationService: AuthenticationService
@@ -66,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
         
-        Auth.auth().signIn(with: credential) { (authResult, error) in            
+        Auth.auth().signIn(with: credential) { (authResult, error) in
         }
     }
     
