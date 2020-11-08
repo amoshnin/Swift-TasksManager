@@ -1,0 +1,6 @@
+framework module Pods_MakeItSo {
+  umbrella header "Pods-MakeItSo-umbrella.h"
+
+  export *
+  module * { export * }
+}
