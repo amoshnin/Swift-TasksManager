@@ -26,6 +26,7 @@
 		88DF00BD23FC45D00007B71E /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */; };
 		88DF00C323FC46FE0007B71E /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00C223FC46FE0007B71E /* EnvironmentKeys.swift */; };
 		88EC1C1F23FD86B20045F6A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1C1E23FD86B20045F6A8 /* SettingsView.swift */; };
+		AC46B89D255866CC00FEF6D3 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B89C255866CC00FEF6D3 /* AppleAuth.swift */; };
 		AC7730EB255827400087C20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7730EA255827400087C20B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		88EC1C1E23FD86B20045F6A8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		88EC1C2223FDCD210045F6A8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A4864AFE6C02396F83AF7044 /* Pods-MakeItSo.emulators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItSo.emulators.xcconfig"; path = "Target Support Files/Pods-MakeItSo/Pods-MakeItSo.emulators.xcconfig"; sourceTree = "<group>"; };
+		AC46B89C255866CC00FEF6D3 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
 		AC7730EA255827400087C20B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1A857703B87962FBD745FCB /* Pods-MakeItSo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItSo.debug.xcconfig"; path = "Target Support Files/Pods-MakeItSo/Pods-MakeItSo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 		8825907F23D9A4FE00AB7022 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AC46B89B255866BF00FEF6D3 /* AuthProviders */,
 				8825908023D9A51900AB7022 /* AuthenticationService.swift */,
 			);
 			path = Services;
@@ -214,6 +217,14 @@
 				88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		AC46B89B255866BF00FEF6D3 /* AuthProviders */ = {
+			isa = PBXGroup;
+			children = (
+				AC46B89C255866CC00FEF6D3 /* AppleAuth.swift */,
+			);
+			path = AuthProviders;
 			sourceTree = "<group>";
 		};
 		ACF08EAC255839E10003C47D /* src */ = {
@@ -390,6 +401,7 @@
 				88D22F8223CDDC73003C6D03 /* TaskRepository.swift in Sources */,
 				88EC1C1F23FD86B20045F6A8 /* SettingsView.swift in Sources */,
 				3584A215246D911000B41569 /* Publisher+Assign.swift in Sources */,
+				AC46B89D255866CC00FEF6D3 /* AppleAuth.swift in Sources */,
 				88B508EF23FDD19E00AC508B /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

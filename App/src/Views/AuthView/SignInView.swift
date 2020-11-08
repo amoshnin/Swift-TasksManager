@@ -53,7 +53,6 @@ struct SignInView: View {
             .cornerRadius(8.0)
             .shadow(radius: 4.0)
             
-            // other buttons will go here
             
             Divider()
                 .padding(.horizontal, 15.0)

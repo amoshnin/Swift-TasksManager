@@ -10,13 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     let gcmMessageIDKey = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        
         FirebaseApp.configure()
-        
-        authenticationService.signIn()
-        
+                
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -37,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "837964176679-3vqcuje8gb55lt1eq5k9m18lfrlc1749.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
-        
         
         return true
     }
