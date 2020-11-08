@@ -75,16 +75,14 @@ struct SettingsView_Previews: PreviewProvider {
 
 struct AccountSection: View {
     @Binding var isModalVisible: Bool
-
+    
     @ObservedObject var settingsViewModel: SettingsViewModel
     @ObservedObject var authenticationService = AuthenticationService()
     
     @State private var showAuthView = false
- 
+    
     var body: some View {
-        Section(footer: footer) {
-            button
-        }
+        Section(footer: footer) {button}
     }
     
     var footer: some View {
@@ -102,25 +100,24 @@ struct AccountSection: View {
                 Text("You're not logged in.")
             }
             Spacer()
-            
-            
-            
         }
     }
     
     var button: some View {
         VStack {
             if authenticationService.isAuth {
-                Button(action: {  self.logout() }) {
+                Button(action: {
+                    self.settingsViewModel.logout()
+                    self.isModalVisible = false
+                }) {
                     HStack {
                         Spacer()
                         Text("Logout")
                         Spacer()
                     }
                 }}
-            
             else {
-                Button(action: { self.login() }) {
+                Button(action: {self.showAuthView.toggle()}) {
                     HStack {
                         Spacer()
                         Text("Login")
@@ -128,21 +125,9 @@ struct AccountSection: View {
                     }
                 }
             }
-            
         }
-        
         .sheet(isPresented: self.$showAuthView) {
             AuthView()
         }
     }
-    
-    func login() {
-        self.showAuthView.toggle()
-    }
-    
-    func logout() {
-        self.settingsViewModel.logout()
-        self.isModalVisible = false
-     }
-    
 }
