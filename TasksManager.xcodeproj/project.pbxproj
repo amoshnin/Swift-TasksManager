@@ -22,11 +22,12 @@
 		88D22F5F23CCC5E6003C6D03 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D22F5E23CCC5E6003C6D03 /* TaskCellViewModel.swift */; };
 		88D22F8223CDDC73003C6D03 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D22F8123CDDC73003C6D03 /* TaskRepository.swift */; };
 		88D22F8423CDDE13003C6D03 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D22F8323CDDE13003C6D03 /* AppDelegate+Injection.swift */; };
-		88DF00BC23FC45D00007B71E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00BA23FC45D00007B71E /* SignInView.swift */; };
+		88DF00BC23FC45D00007B71E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00BA23FC45D00007B71E /* AuthView.swift */; };
 		88DF00BD23FC45D00007B71E /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */; };
 		88DF00C323FC46FE0007B71E /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DF00C223FC46FE0007B71E /* EnvironmentKeys.swift */; };
 		88EC1C1F23FD86B20045F6A8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC1C1E23FD86B20045F6A8 /* SettingsView.swift */; };
 		AC46B89D255866CC00FEF6D3 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B89C255866CC00FEF6D3 /* AppleAuth.swift */; };
+		AC46B8A12558680100FEF6D3 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46B8A02558680100FEF6D3 /* Index.swift */; };
 		AC7730EB255827400087C20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC7730EA255827400087C20B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +51,7 @@
 		88D22F5E23CCC5E6003C6D03 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		88D22F8123CDDC73003C6D03 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		88D22F8323CDDE13003C6D03 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
-		88DF00BA23FC45D00007B71E /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		88DF00BA23FC45D00007B71E /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		88DF00BB23FC45D00007B71E /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
 		88DF00C223FC46FE0007B71E /* EnvironmentKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentKeys.swift; sourceTree = "<group>"; };
 		88EB713C23FC4C1200146A0F /* TasksManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TasksManager.entitlements; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		88EC1C2223FDCD210045F6A8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A4864AFE6C02396F83AF7044 /* Pods-MakeItSo.emulators.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItSo.emulators.xcconfig"; path = "Target Support Files/Pods-MakeItSo/Pods-MakeItSo.emulators.xcconfig"; sourceTree = "<group>"; };
 		AC46B89C255866CC00FEF6D3 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
+		AC46B8A02558680100FEF6D3 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		AC7730EA255827400087C20B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1A857703B87962FBD745FCB /* Pods-MakeItSo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeItSo.debug.xcconfig"; path = "Target Support Files/Pods-MakeItSo/Pods-MakeItSo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				AC46B870255858F900FEF6D3 /* TasksListView */,
 				AC46B86D255858EF00FEF6D3 /* SettingsView */,
 				AC46B86A255858E100FEF6D3 /* AuthView */,
+				AC46B8A02558680100FEF6D3 /* Index.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				AC46B8712558591800FEF6D3 /* Components */,
-				88DF00BA23FC45D00007B71E /* SignInView.swift */,
+				88DF00BA23FC45D00007B71E /* AuthView.swift */,
 			);
 			path = AuthView;
 			sourceTree = "<group>";
@@ -391,9 +394,10 @@
 				88169CDD23C8A455009CFC9C /* Task.swift in Sources */,
 				88169CC623C8A081009CFC9C /* AppDelegate.swift in Sources */,
 				8825908123D9A51900AB7022 /* AuthenticationService.swift in Sources */,
-				88DF00BC23FC45D00007B71E /* SignInView.swift in Sources */,
+				88DF00BC23FC45D00007B71E /* AuthView.swift in Sources */,
 				88D22F5D23CCC5D5003C6D03 /* TaskListViewModel.swift in Sources */,
 				88D22F5F23CCC5E6003C6D03 /* TaskCellViewModel.swift in Sources */,
+				AC46B8A12558680100FEF6D3 /* Index.swift in Sources */,
 				88169CC823C8A081009CFC9C /* SceneDelegate.swift in Sources */,
 				88DF00BD23FC45D00007B71E /* SignInWithAppleButton.swift in Sources */,
 				88DF00C323FC46FE0007B71E /* EnvironmentKeys.swift in Sources */,

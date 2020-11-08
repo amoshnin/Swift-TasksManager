@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         // Set the window EnvironmentKey to the current window for the contentView's environment.
-        let contentView = TaskListView().environment(\.window, window)
+        let contentView = Index().environment(\.window, window)
 
         window.rootViewController = UIHostingController(rootView: contentView)
         self.window = window

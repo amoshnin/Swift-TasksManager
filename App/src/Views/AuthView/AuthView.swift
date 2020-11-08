@@ -4,7 +4,7 @@ import AuthenticationServices
 import CryptoKit
 import GoogleSignIn
 
-struct SignInView: View {
+struct AuthView: View {
     @Environment(\.window) var window: UIWindow?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -74,8 +74,8 @@ struct SignInView: View {
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        AuthView()
     }
 }
