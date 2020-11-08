@@ -15,4 +15,6 @@ target 'TasksManager' do
   pod 'FirebaseFirestoreSwift'
   
   pod 'Firebase/Functions'
+  pod 'Firebase/Messaging'
+
 end

@@ -1,11 +1,3 @@
-//
-//  AuthenticationService.swift
-//  MakeItSo
-//
-//  Created by Peter Friese on 23/01/2020.
-//  Copyright © 2020 Google LLC. All rights reserved.
-//
-
 import Foundation
 import Firebase
 import AuthenticationServices
