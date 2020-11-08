@@ -36,11 +36,11 @@ struct AuthView: View {
             
             Spacer()
             
-            SignInWithAppleButton()
+            SignInWithAppleButton(  onRequest: { (request) in
+                self.signInWithAppleButtonTapped()
+            }, onCompletion: { (response) in })
                 .frame(width: 280, height: 45)
-                .onTapGesture {
-                    self.signInWithAppleButtonTapped()
-                }
+                
             
             Button(action: {
                 GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController

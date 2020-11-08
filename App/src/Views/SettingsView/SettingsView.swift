@@ -94,9 +94,7 @@ struct AccountSection: View {
                     Text("Logged in as \(self.settingsViewModel.email)")
                 }
             }
-            else {
-                
-                
+            else {   
                 Text("You're not logged in.")
             }
             Spacer()
