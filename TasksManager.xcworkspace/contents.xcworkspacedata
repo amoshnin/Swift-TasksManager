@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/artem/Documents/Work/Code/Swift/TasksManager/TasksManager.xcodeproj">
+      location = "group:TasksManager.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
